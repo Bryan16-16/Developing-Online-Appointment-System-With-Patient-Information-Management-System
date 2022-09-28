@@ -44,7 +44,9 @@ Route::middleware(['auth', 'user-access:admin'])->group(function () {
   
     Route::get('/admin/dashboard', [HomeController::class, 'admin_dashboard'])->name('admin.dashboard');
     Route::get('/admin/profile', [HomeController::class, 'admin_setting'])->name('admin.setting');
-    Route::get('/admin/doctor', [HomeController::class, 'admin_doctor'])->name('admin.doctor');
+
+    
+    Route::get('/admin/add_user/admin-add-user', [HomeController::class, 'admin_add_user'])->name('admin.add.user');
     Route::get('/admin/doctor', [SecretaryDoctorController::class, 'index']);
     Route::get('/admin/secretary', [HomeController::class, 'admin_secretary'])->name('admin.secretary');
     Route::get('/admin/patient', [HomeController::class, 'admin_patient'])->name('admin.patient');

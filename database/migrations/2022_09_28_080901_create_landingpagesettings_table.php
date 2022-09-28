@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('landingpagesettings', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->string('logo') ->nullable();
+            $table->binary('logo') ->nullable();
             $table->string('title');
             $table->string('stitle');
             $table->string('location');

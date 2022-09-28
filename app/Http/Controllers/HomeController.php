@@ -47,9 +47,10 @@ class HomeController extends Controller
         $data = ['LoggedUserInfo' => user::where('id', '=', session('LoggedUser'))->first()];
         return view('admin.admin-profile', $data,['dashboard_title' => 'ADMIN ']);
     }
-    function admin_doctor(){
+    //new code
+    function admin_add_user(){
         $data = ['LoggedUserInfo' => user::where('id', '=', session('LoggedUser'))->first()];
-        return view('admin.admin-doctor', $data,['dashboard_title' => 'ADMIN ']);
+        return view('admin.add_user.admin-add-user', $data,['dashboard_title' => 'ADMIN ']);
     }
     function admin_secretary(){
         $data = ['LoggedUserInfo' => user::where('id', '=', session('LoggedUser'))->first()];

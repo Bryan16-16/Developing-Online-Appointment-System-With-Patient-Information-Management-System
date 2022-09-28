@@ -13,9 +13,9 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/admin/doctor">
+                        <a class="nav-link" href="/admin/add_user">
                             <span data-feather="users" class="align-text-bottom"></span>
-                            Doctor
+                            Add User
                         </a>
                     </li>
                     <li class="nav-item">
@@ -52,7 +52,7 @@
 
 
 
-                    <hr>
+                    
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault();
                     document.getElementById('logout-form').submit();">
