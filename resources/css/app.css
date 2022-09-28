@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.container {
+    color: #254ca2;
+}
+
+.imglogo {
+    -webkit-filter: drop-shadow(1px 2px 2px rgb(133, 131, 131));
+    filter: drop-shadow(2px 2px 2px rgb(133, 133, 133));
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-right: 5px;
+    padding-bottom: 5px;
+
+    /* height: 78px;
+    width: 78px; */
+}
+.logo {
+    font-weight: bold;
+    color: #607ebd;
+}
+
+.card-header {
+    color: #607ebd;
+}
+
+/* login & register show password */
+.checkbox {
+    text-align: end;
+    margin-top: 13px;
+    margin-bottom: 23px;
+    
+}
+
+li{
+    padding-left: 5px;
+}
+
+
+.size-10{
+    width: 17px;
+    height: 17px;
+}
